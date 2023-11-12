@@ -64,3 +64,4 @@ while True:
         print(colors.red("#"*60))
     else:
         print(colors.red("yanlış giriyorsun!..."))
+
