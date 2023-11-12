@@ -1,1 +1,31 @@
+import sys
+from os import getenv
+
+from dotenv import load_dotenv
+from pyrogram import filters
+
+load_dotenv()
+
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH")
+
+BOT_TOKEN = getenv("BOT_TOKEN") 
+
+BOT_NAME = getenv("BOT_NAME")
+OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
+
+UPSTREAM_REPO = getenv(
+    "UPSTREAM_REPO",
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
+AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "5400"))
+AUTO_SUGGESTION_TIME = int(getenv("AUTO_SUGGESTION_TIME", "5400"))
+AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", None)
+AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", True)
+PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
+
+STRING1 = getenv("STRING_SESSION", None)
+STRING2 = getenv("STRING_SESSION2", None)
+STRING3 = getenv("STRING_SESSION3", None)
+STRING4 = getenv("STRING_SESSION4", None)
+STRING5 = getenv("STRING_SESSION5", None)
 theme: jekyll-theme-dinky
